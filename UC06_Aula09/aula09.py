@@ -57,8 +57,8 @@ else :
  palavra = "Ano"
 
 #retornar a quantidade de itens da lista
-print(len(lista))
-print(len(palavra))
+# print(len(lista))
+# print(len(palavra))
 
 #função sum soma valores de lista numerica
 print("A soma da lista é",sum(lista))

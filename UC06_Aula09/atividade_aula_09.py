@@ -5,7 +5,7 @@ notas = []
 
 
 for i in range(5):
-    nota = int(input(f"Digite a {1+i}ª nota: "))
+    nota = int(input(f"Digite a {i+1}ª nota: "))
     notas.append(nota)
 
 def calculo_media(notas):
