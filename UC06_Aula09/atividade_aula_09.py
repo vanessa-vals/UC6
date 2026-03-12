@@ -8,6 +8,7 @@ for i in range(5):
     nota = int(input(f"Digite a {i+1}ª nota: "))
     notas.append(nota)
 
+#def significa definir
 def calculo_media(notas):
     soma = sum(notas)
     media = soma / len(notas)
