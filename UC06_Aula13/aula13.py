@@ -34,6 +34,26 @@ for editoras in todos2:
     print(editoras["id_editora"],"-", editoras["nome"],"-",  editoras["email"],"-",  editoras["telefone"], "-", editoras["data_cadastro"])
 
 
+# Buscar unico registro a partir do id sendo unico
+cursor.execute("SELECT *FROM clientes WHERE id_cliente = 1")
+cliente = cursor.fetchone()
+print(cliente)
+
+# vim cliente especifico
+nome_busca = "Ursula Souza"
+cursor.execute("SELECT *FROM clientes WHERE nome = %s",(nome_busca))
+resultado = cursor.fetchall()
+print(resultado)
+
+# vim todas as vezes o nome citado com comando LIKE
+nome_busca = "Ursula%"
+cursor.execute("SELECT *FROM clientes WHERE nome LIKE %s",(nome_busca))
+resultado = cursor.fetchall()
+print(resultado)
+
+
+
+
 
    
  
