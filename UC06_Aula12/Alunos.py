@@ -25,7 +25,7 @@ if opcao == 1:
 
     excel = pd.DataFrame(dados)
 
-    excel.to_excel("Aula12\Alunos.xlsx", index=False)
+    excel.to_excel("UC06_Aula12\Alunos.xlsx", index=False)
     print("Ação Finalizada....")
 
 elif opcao == 2:
